@@ -1,0 +1,109 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,600,300);
+@import url(bootstrap.min.css);
+
+body {
+	font-family: 'Open Sans', sans-serif;
+	width: auto;
+	top: 0;
+	left: 0;
+	right: 0;
+	color: #333;
+}
+
+h1 {
+	font-size: 40px;
+	font-weight: 600;
+}
+
+p {
+	font-weight: 400;
+	font-size: 14px;
+}
+
+#loveFooter {
+	color: red;
+	font-weight: bold;
+}
+
+footer {
+	position: relative;
+	color: #b0b0b0;
+	bottom: 0;
+	margin-bottom: 5px;
+	padding-left: 15px;
+}
+
+footer a:link {
+	text-decoration: none;
+	color: #b0b0b0;
+}
+
+footer a:hover {
+	text-decoration: none;
+	color: #2cb8f3;
+}
+
+footer a:active {
+	text-decoration: none;
+	color: #b0b0b0;
+}
+
+footer a:visited {
+	text-decoration: none;
+	color: #b0b0b0;
+}
+
+#privacy {
+	margin-left: 30px;
+	margin-right: 30px;
+}
+
+#submit {
+	margin-left: 30px;
+	margin-right: 30px;
+}
+
+.header {
+	height: 500px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	width: 100%;
+	background: url(../pages_img/IMG_0938.JPG) no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+#headerTitle {
+	font-size: 60px;
+	color: white;
+	text-align: center;
+}
+
+#logoTitle {
+	text-align: center;
+	padding-top: 130px;
+}
+
+img {
+	vertical-align: top;
+}
+
+.content {
+	padding-top: 510px;
+	padding-left: 10%;
+	padding-right: 10%;
+	padding-bottom: 30px;
+}
+
+#subTitleContent {
+	font-size: 20px;
+}
+
+.submitContainer {
+	padding-top: 40px;
+	padding-bottom: 40px;
+}

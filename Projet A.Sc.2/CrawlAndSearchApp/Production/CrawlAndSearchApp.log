@@ -1,0 +1,24 @@
+﻿  stdafx.cpp
+  Balises.cpp
+  CrawlAndSearchApp.cpp
+  CrawlAndSearchAppDlg.cpp
+  CrawlerService.cpp
+  FileUtility.cpp
+  HtmlEntity.cpp
+  HtmlInnerText.cpp
+  HtmlParser.cpp
+  HtmlTag.cpp
+  HtmlTagResult.cpp
+  ImageUtility.cpp
+  Json.cpp
+  PageInternet.cpp
+  Photo.cpp
+  SearcherService.cpp
+  SqlHelper.cpp
+  StringExtension.cpp
+  Task.cpp
+  ThreadManager.cpp
+  VectorExtension.cpp
+  Generating code
+  Finished generating code
+  CrawlAndSearchApp.vcxproj -> D:\SUPINFO\A.Sc.2\Projets\Fin d'année\PROJET\Projet A.Sc.2\Production\CrawlAndSearchApp.exe

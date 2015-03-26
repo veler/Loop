@@ -1,0 +1,176 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.30501.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{5A44D1D3-1FDC-481D-9F5B-B48F5A080371}"
+	ProjectSection(SolutionItems) = preProject
+		.nuget\NuGet.Config = .nuget\NuGet.Config
+		.nuget\NuGet.exe = .nuget\NuGet.exe
+		.nuget\NuGet.targets = .nuget\NuGet.targets
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Autre", "Autre", "{6559280F-0FB1-4FB9-A8A5-F885CBF6908B}"
+	ProjectSection(SolutionItems) = preProject
+		Base de données.sql = Base de données.sql
+		Merise.xlsx = Merise.xlsx
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cluster DNS Robot", "Cluster DNS Robot\Cluster DNS Robot.csproj", "{32BC42C5-EF78-4023-B8B0-611EBF1E3C80}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Website", "Website", "{80E7F46E-8A90-4933-B533-E0DE3DDAAEC0}"
+	ProjectSection(SolutionItems) = preProject
+		Website\about.html = Website\about.html
+		Website\index.html = Website\index.html
+		Website\privacy.html = Website\privacy.html
+		Website\result.html = Website\result.html
+		Website\result_img.html = Website\result_img.html
+		Website\submit.html = Website\submit.html
+		Website\terms.html = Website\terms.html
+		Website\tos.html = Website\tos.html
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "css", "css", "{AAABC47F-DFFB-4319-9BEA-2F0B291DA793}"
+	ProjectSection(SolutionItems) = preProject
+		Website\css\about.css = Website\css\about.css
+		Website\css\bootstrap-theme.min.css = Website\css\bootstrap-theme.min.css
+		Website\css\bootstrap.min.css = Website\css\bootstrap.min.css
+		Website\css\pages.css = Website\css\pages.css
+		Website\css\privacy.css = Website\css\privacy.css
+		Website\css\result.css = Website\css\result.css
+		Website\css\result_img.css = Website\css\result_img.css
+		Website\css\style1.css = Website\css\style1.css
+		Website\css\style2.css = Website\css\style2.css
+		Website\css\style3.css = Website\css\style3.css
+		Website\css\style4.css = Website\css\style4.css
+		Website\css\style5.css = Website\css\style5.css
+		Website\css\submit.css = Website\css\submit.css
+		Website\css\terms.css = Website\css\terms.css
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "images", "images", "{37048E0B-8424-4351-BE20-91641ABAC2F9}"
+	ProjectSection(SolutionItems) = preProject
+		Website\images\1.svg = Website\images\1.svg
+		Website\images\2.svg = Website\images\2.svg
+		Website\images\3.svg = Website\images\3.svg
+		Website\images\4.svg = Website\images\4.svg
+		Website\images\5.svg = Website\images\5.svg
+		Website\images\favorite.svg = Website\images\favorite.svg
+		Website\images\favorite_active.svg = Website\images\favorite_active.svg
+		Website\images\like.svg = Website\images\like.svg
+		Website\images\like_active.svg = Website\images\like_active.svg
+		Website\images\logo.svg = Website\images\logo.svg
+		Website\images\share.svg = Website\images\share.svg
+		Website\images\share_active.svg = Website\images\share_active.svg
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "fonts", "fonts", "{2C6A0D5F-09D2-4105-93ED-AB88F4F2053B}"
+	ProjectSection(SolutionItems) = preProject
+		Website\fonts\glyphicons-halflings-regular.eot = Website\fonts\glyphicons-halflings-regular.eot
+		Website\fonts\glyphicons-halflings-regular.svg = Website\fonts\glyphicons-halflings-regular.svg
+		Website\fonts\glyphicons-halflings-regular.ttf = Website\fonts\glyphicons-halflings-regular.ttf
+		Website\fonts\glyphicons-halflings-regular.woff = Website\fonts\glyphicons-halflings-regular.woff
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "js", "js", "{F57CCC60-2366-47C6-90FB-5A218CD80451}"
+	ProjectSection(SolutionItems) = preProject
+		Website\js\bootstrap.min.js = Website\js\bootstrap.min.js
+		Website\js\dropdown.js = Website\js\dropdown.js
+		Website\js\jquery-1.9.1.js = Website\js\jquery-1.9.1.js
+		Website\js\jquery-ui.js = Website\js\jquery-ui.js
+		Website\js\share.js = Website\js\share.js
+		Website\js\style.js = Website\js\style.js
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "CrawlAndSearchApp", "CrawlAndSearchApp\CrawlAndSearchApp.vcxproj", "{853A85A5-E210-4F79-ACA9-07113B1A5CF7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LoopWebsite", "LoopWebsite\LoopWebsite.csproj", "{B0D869D1-252A-4BFA-A211-C11F40563C0D}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 4
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://velersoftware.visualstudio.com/defaultcollection
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = Cluster\u0020DNS\u0020Robot\\Cluster\u0020DNS\u0020Robot.csproj
+		SccProjectName1 = Cluster\u0020DNS\u0020Robot
+		SccLocalPath1 = Cluster\u0020DNS\u0020Robot
+		SccProjectUniqueName2 = CrawlAndSearchApp\\CrawlAndSearchApp.vcxproj
+		SccProjectName2 = CrawlAndSearchApp
+		SccLocalPath2 = CrawlAndSearchApp
+		SccProjectUniqueName3 = LoopWebsite\\LoopWebsite.csproj
+		SccProjectName3 = LoopWebsite
+		SccLocalPath3 = LoopWebsite
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|Mixed Platforms = Debug|Mixed Platforms
+		Debug|Win32 = Debug|Win32
+		Production|Any CPU = Production|Any CPU
+		Production|Mixed Platforms = Production|Mixed Platforms
+		Production|Win32 = Production|Win32
+		Release|Any CPU = Release|Any CPU
+		Release|Mixed Platforms = Release|Mixed Platforms
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{32BC42C5-EF78-4023-B8B0-611EBF1E3C80}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{32BC42C5-EF78-4023-B8B0-611EBF1E3C80}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{32BC42C5-EF78-4023-B8B0-611EBF1E3C80}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{32BC42C5-EF78-4023-B8B0-611EBF1E3C80}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{32BC42C5-EF78-4023-B8B0-611EBF1E3C80}.Debug|Win32.ActiveCfg = Debug|Any CPU
+		{32BC42C5-EF78-4023-B8B0-611EBF1E3C80}.Production|Any CPU.ActiveCfg = Production|Any CPU
+		{32BC42C5-EF78-4023-B8B0-611EBF1E3C80}.Production|Any CPU.Build.0 = Production|Any CPU
+		{32BC42C5-EF78-4023-B8B0-611EBF1E3C80}.Production|Mixed Platforms.ActiveCfg = Production|Any CPU
+		{32BC42C5-EF78-4023-B8B0-611EBF1E3C80}.Production|Mixed Platforms.Build.0 = Production|Any CPU
+		{32BC42C5-EF78-4023-B8B0-611EBF1E3C80}.Production|Win32.ActiveCfg = Production|Any CPU
+		{32BC42C5-EF78-4023-B8B0-611EBF1E3C80}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{32BC42C5-EF78-4023-B8B0-611EBF1E3C80}.Release|Any CPU.Build.0 = Release|Any CPU
+		{32BC42C5-EF78-4023-B8B0-611EBF1E3C80}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{32BC42C5-EF78-4023-B8B0-611EBF1E3C80}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{32BC42C5-EF78-4023-B8B0-611EBF1E3C80}.Release|Win32.ActiveCfg = Release|Any CPU
+		{853A85A5-E210-4F79-ACA9-07113B1A5CF7}.Debug|Any CPU.ActiveCfg = Debug|Win32
+		{853A85A5-E210-4F79-ACA9-07113B1A5CF7}.Debug|Mixed Platforms.ActiveCfg = Debug|Win32
+		{853A85A5-E210-4F79-ACA9-07113B1A5CF7}.Debug|Mixed Platforms.Build.0 = Debug|Win32
+		{853A85A5-E210-4F79-ACA9-07113B1A5CF7}.Debug|Mixed Platforms.Deploy.0 = Debug|Win32
+		{853A85A5-E210-4F79-ACA9-07113B1A5CF7}.Debug|Win32.ActiveCfg = Debug|Win32
+		{853A85A5-E210-4F79-ACA9-07113B1A5CF7}.Debug|Win32.Build.0 = Debug|Win32
+		{853A85A5-E210-4F79-ACA9-07113B1A5CF7}.Production|Any CPU.ActiveCfg = Production|Win32
+		{853A85A5-E210-4F79-ACA9-07113B1A5CF7}.Production|Mixed Platforms.ActiveCfg = Production|Win32
+		{853A85A5-E210-4F79-ACA9-07113B1A5CF7}.Production|Mixed Platforms.Build.0 = Production|Win32
+		{853A85A5-E210-4F79-ACA9-07113B1A5CF7}.Production|Mixed Platforms.Deploy.0 = Production|Win32
+		{853A85A5-E210-4F79-ACA9-07113B1A5CF7}.Production|Win32.ActiveCfg = Production|Win32
+		{853A85A5-E210-4F79-ACA9-07113B1A5CF7}.Production|Win32.Build.0 = Production|Win32
+		{853A85A5-E210-4F79-ACA9-07113B1A5CF7}.Production|Win32.Deploy.0 = Production|Win32
+		{853A85A5-E210-4F79-ACA9-07113B1A5CF7}.Release|Any CPU.ActiveCfg = Release|Win32
+		{853A85A5-E210-4F79-ACA9-07113B1A5CF7}.Release|Mixed Platforms.ActiveCfg = Release|Win32
+		{853A85A5-E210-4F79-ACA9-07113B1A5CF7}.Release|Mixed Platforms.Build.0 = Release|Win32
+		{853A85A5-E210-4F79-ACA9-07113B1A5CF7}.Release|Mixed Platforms.Deploy.0 = Release|Win32
+		{853A85A5-E210-4F79-ACA9-07113B1A5CF7}.Release|Win32.ActiveCfg = Release|Win32
+		{853A85A5-E210-4F79-ACA9-07113B1A5CF7}.Release|Win32.Build.0 = Release|Win32
+		{B0D869D1-252A-4BFA-A211-C11F40563C0D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B0D869D1-252A-4BFA-A211-C11F40563C0D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B0D869D1-252A-4BFA-A211-C11F40563C0D}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{B0D869D1-252A-4BFA-A211-C11F40563C0D}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{B0D869D1-252A-4BFA-A211-C11F40563C0D}.Debug|Win32.ActiveCfg = Debug|Any CPU
+		{B0D869D1-252A-4BFA-A211-C11F40563C0D}.Production|Any CPU.ActiveCfg = Production|Any CPU
+		{B0D869D1-252A-4BFA-A211-C11F40563C0D}.Production|Any CPU.Build.0 = Production|Any CPU
+		{B0D869D1-252A-4BFA-A211-C11F40563C0D}.Production|Mixed Platforms.ActiveCfg = Production|Any CPU
+		{B0D869D1-252A-4BFA-A211-C11F40563C0D}.Production|Mixed Platforms.Build.0 = Production|Any CPU
+		{B0D869D1-252A-4BFA-A211-C11F40563C0D}.Production|Win32.ActiveCfg = Production|Any CPU
+		{B0D869D1-252A-4BFA-A211-C11F40563C0D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B0D869D1-252A-4BFA-A211-C11F40563C0D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B0D869D1-252A-4BFA-A211-C11F40563C0D}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{B0D869D1-252A-4BFA-A211-C11F40563C0D}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{B0D869D1-252A-4BFA-A211-C11F40563C0D}.Release|Win32.ActiveCfg = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{AAABC47F-DFFB-4319-9BEA-2F0B291DA793} = {80E7F46E-8A90-4933-B533-E0DE3DDAAEC0}
+		{37048E0B-8424-4351-BE20-91641ABAC2F9} = {80E7F46E-8A90-4933-B533-E0DE3DDAAEC0}
+		{2C6A0D5F-09D2-4105-93ED-AB88F4F2053B} = {80E7F46E-8A90-4933-B533-E0DE3DDAAEC0}
+		{F57CCC60-2366-47C6-90FB-5A218CD80451} = {80E7F46E-8A90-4933-B533-E0DE3DDAAEC0}
+	EndGlobalSection
+EndGlobal

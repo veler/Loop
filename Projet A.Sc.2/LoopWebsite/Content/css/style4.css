@@ -1,0 +1,71 @@
+@import url(bootstrap.min.css);
+@import url(bootstrap-theme.min.css);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,600,300);
+
+body {
+	font-family: 'Open Sans', sans-serif;
+	background-color: #FFFFFF;
+	background: url(../images/4.svg) no-repeat right bottom fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+#logo {
+	padding-bottom: 10px;
+	background: url(../images/logo.svg) no-repeat;
+	border: 0;
+	width: 139px;
+	height: 97px;
+	display: block;
+	position: relative;
+}
+
+.searchContainer {
+	color: black;
+	padding-top: 100px;
+}
+
+#loveFooter {
+	color: red;
+	font-weight: bold;
+}
+
+footer {
+	color: #b0b0b0;
+	position: fixed;
+	bottom: 0;
+	margin-bottom: 5px;
+	padding-left: 15px;
+}
+
+footer a:link {
+	text-decoration: none;
+	color: #b0b0b0;
+}
+
+footer a:hover {
+	text-decoration: none;
+	color: #2cb8f3;
+}
+
+footer a:active {
+	text-decoration: none;
+	color: #b0b0b0;
+}
+
+footer a:visited {
+	text-decoration: none;
+	color: #b0b0b0;
+}
+
+#privacy {
+	margin-left: 30px;
+	margin-right: 30px;
+}
+
+#submit {
+	margin-left: 30px;
+	margin-right: 30px;
+}

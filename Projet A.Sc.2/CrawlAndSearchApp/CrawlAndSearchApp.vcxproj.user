@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <DebuggerFlavor>WindowsLocalDebugger</DebuggerFlavor>
+    <RemoteDebuggerServerName>192.168.37.110:4018</RemoteDebuggerServerName>
+    <RemoteDebuggerCommand>c:\remotetemp\CrawlAndSearchApp.exe</RemoteDebuggerCommand>
+    <RemoteDebuggerWorkingDirectory>c:\remotetemp</RemoteDebuggerWorkingDirectory>
+    <RemoteDebuggerDebuggerType>NativeOnly</RemoteDebuggerDebuggerType>
+    <DeploymentDirectory>c:\remotetemp</DeploymentDirectory>
+    <AdditionalFiles>
+    </AdditionalFiles>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <DebuggerFlavor>WindowsLocalDebugger</DebuggerFlavor>
+    <RemoteDebuggerCommand>c:\remotetemp\CrawlAndSearchApp.exe</RemoteDebuggerCommand>
+    <RemoteDebuggerWorkingDirectory>c:\remotetemp</RemoteDebuggerWorkingDirectory>
+    <RemoteDebuggerServerName>192.168.37.110:4018</RemoteDebuggerServerName>
+    <RemoteDebuggerDebuggerType>NativeOnly</RemoteDebuggerDebuggerType>
+    <DeploymentDirectory>c:\remotetemp</DeploymentDirectory>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Production|Win32'">
+    <DebuggerFlavor>WindowsRemoteDebugger</DebuggerFlavor>
+    <RemoteDebuggerCommand>c:\remotetemp\CrawlAndSearchApp.exe</RemoteDebuggerCommand>
+    <RemoteDebuggerWorkingDirectory>c:\remotetemp</RemoteDebuggerWorkingDirectory>
+    <RemoteDebuggerServerName>192.168.37.110:4018</RemoteDebuggerServerName>
+    <RemoteDebuggerDebuggerType>NativeOnly</RemoteDebuggerDebuggerType>
+    <DeploymentDirectory>c:\remotetemp</DeploymentDirectory>
+  </PropertyGroup>
+</Project>

@@ -1,0 +1,194 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit http://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <EncryptedPassword>AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAqfqeLsd3lkCp78FnzzpYfQAAAAACAAAAAAAQZgAAAAEAACAAAADEWQ9dEPCo9Q4D/we+9rFU8ix0bnUasfJVpYR8x3KLewAAAAAOgAAAAAIAACAAAACepA4ObNxz/oIgyVSaGcp85/t/eqtCMB6NJuauUxMMqRAAAACNhWDIffRB/uicf2WSPZ9jQAAAAFyV2nGMAcFR6VJNsM5n6ybT9ZJBa+f0k1oCf6C5Vot1VQVxHTR0DEACVDD6DqW6A/GRxFqKwixAueSwAWl9dbY=</EncryptedPassword>
+    <_PublishTargetUrl>ftp://192.168.37.110</_PublishTargetUrl>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="bin/Antlr3.Runtime.dll">
+      <publishTime>04/30/2014 16:40:57</publishTime>
+    </File>
+    <File Include="bin/Antlr3.Runtime.pdb">
+      <publishTime>04/30/2014 16:40:57</publishTime>
+    </File>
+    <File Include="bin/LoopWebsite.dll">
+      <publishTime>05/30/2014 19:33:06</publishTime>
+    </File>
+    <File Include="bin/LoopWebsite.pdb">
+      <publishTime>05/13/2014 08:40:02</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Web.Infrastructure.dll">
+      <publishTime>04/30/2014 16:41:01</publishTime>
+    </File>
+    <File Include="bin/Newtonsoft.Json.dll">
+      <publishTime>05/21/2014 12:51:59</publishTime>
+    </File>
+    <File Include="bin/System.Web.Helpers.dll">
+      <publishTime>05/12/2014 22:27:49</publishTime>
+    </File>
+    <File Include="bin/System.Web.Mvc.dll">
+      <publishTime>05/12/2014 22:27:49</publishTime>
+    </File>
+    <File Include="bin/System.Web.Optimization.dll">
+      <publishTime>05/12/2014 09:19:39</publishTime>
+    </File>
+    <File Include="bin/System.Web.Razor.dll">
+      <publishTime>05/12/2014 22:27:49</publishTime>
+    </File>
+    <File Include="bin/System.Web.WebPages.Deployment.dll">
+      <publishTime>05/12/2014 22:27:49</publishTime>
+    </File>
+    <File Include="bin/System.Web.WebPages.dll">
+      <publishTime>05/12/2014 22:27:49</publishTime>
+    </File>
+    <File Include="bin/System.Web.WebPages.Razor.dll">
+      <publishTime>05/12/2014 22:27:49</publishTime>
+    </File>
+    <File Include="bin/Views/PageIndex/Home.cshtml">
+      <publishTime>05/12/2014 22:39:10</publishTime>
+    </File>
+    <File Include="bin/WebGrease.dll">
+      <publishTime>04/30/2014 16:41:02</publishTime>
+    </File>
+    <File Include="Content/css/bootstrap-theme.min.css">
+      <publishTime>05/14/2014 11:11:42</publishTime>
+    </File>
+    <File Include="Content/css/bootstrap.min.css">
+      <publishTime>05/21/2014 13:28:54</publishTime>
+    </File>
+    <File Include="Content/css/pages.css">
+      <publishTime>05/21/2014 13:09:46</publishTime>
+    </File>
+    <File Include="Content/css/result.css">
+      <publishTime>05/21/2014 13:09:46</publishTime>
+    </File>
+    <File Include="Content/css/result_img.css">
+      <publishTime>05/30/2014 16:16:48</publishTime>
+    </File>
+    <File Include="Content/css/style1.css">
+      <publishTime>05/21/2014 13:09:46</publishTime>
+    </File>
+    <File Include="Content/css/style2.css">
+      <publishTime>05/21/2014 13:09:46</publishTime>
+    </File>
+    <File Include="Content/css/style3.css">
+      <publishTime>05/21/2014 13:09:46</publishTime>
+    </File>
+    <File Include="Content/css/style4.css">
+      <publishTime>05/21/2014 13:09:46</publishTime>
+    </File>
+    <File Include="Content/css/style5.css">
+      <publishTime>05/21/2014 13:09:46</publishTime>
+    </File>
+    <File Include="Content/fonts/glyphicons-halflings-regular.eot">
+      <publishTime>05/12/2014 09:43:43</publishTime>
+    </File>
+    <File Include="Content/fonts/glyphicons-halflings-regular.svg">
+      <publishTime>05/12/2014 09:43:43</publishTime>
+    </File>
+    <File Include="Content/fonts/glyphicons-halflings-regular.ttf">
+      <publishTime>05/12/2014 09:43:43</publishTime>
+    </File>
+    <File Include="Content/fonts/glyphicons-halflings-regular.woff">
+      <publishTime>05/12/2014 09:43:43</publishTime>
+    </File>
+    <File Include="Content/images/1.svg">
+      <publishTime>05/12/2014 09:43:36</publishTime>
+    </File>
+    <File Include="Content/images/2.svg">
+      <publishTime>05/12/2014 09:43:36</publishTime>
+    </File>
+    <File Include="Content/images/3.svg">
+      <publishTime>05/12/2014 09:43:36</publishTime>
+    </File>
+    <File Include="Content/images/4.svg">
+      <publishTime>05/12/2014 09:43:36</publishTime>
+    </File>
+    <File Include="Content/images/5.svg">
+      <publishTime>05/12/2014 09:43:36</publishTime>
+    </File>
+    <File Include="Content/images/favorite.svg">
+      <publishTime>05/12/2014 09:43:36</publishTime>
+    </File>
+    <File Include="Content/images/favorite_active.svg">
+      <publishTime>05/12/2014 09:43:36</publishTime>
+    </File>
+    <File Include="Content/images/like.svg">
+      <publishTime>05/12/2014 09:43:36</publishTime>
+    </File>
+    <File Include="Content/images/like_active.svg">
+      <publishTime>05/12/2014 09:43:36</publishTime>
+    </File>
+    <File Include="Content/images/logo.svg">
+      <publishTime>05/12/2014 09:43:36</publishTime>
+    </File>
+    <File Include="Content/images/share.svg">
+      <publishTime>05/12/2014 09:43:36</publishTime>
+    </File>
+    <File Include="Content/images/share_active.svg">
+      <publishTime>05/12/2014 09:43:36</publishTime>
+    </File>
+    <File Include="Content/js/bootstrap.min.js">
+      <publishTime>05/14/2014 11:11:44</publishTime>
+    </File>
+    <File Include="Content/js/dropdown.js">
+      <publishTime>05/14/2014 18:54:44</publishTime>
+    </File>
+    <File Include="Content/js/jquery-1.9.1.js">
+      <publishTime>05/14/2014 11:11:44</publishTime>
+    </File>
+    <File Include="Content/js/jquery-ui.js">
+      <publishTime>05/14/2014 11:11:46</publishTime>
+    </File>
+    <File Include="Content/js/share.js">
+      <publishTime>05/14/2014 11:11:46</publishTime>
+    </File>
+    <File Include="Content/js/style.js">
+      <publishTime>05/21/2014 13:15:50</publishTime>
+    </File>
+    <File Include="Global.asax">
+      <publishTime>05/12/2014 09:33:58</publishTime>
+    </File>
+    <File Include="packages.config">
+      <publishTime>05/21/2014 12:52:00</publishTime>
+    </File>
+    <File Include="Views/PageIndex/Home.cshtml">
+      <publishTime>05/30/2014 08:50:44</publishTime>
+    </File>
+    <File Include="Views/PageIndex/Index.cshtml">
+      <publishTime>05/12/2014 22:35:35</publishTime>
+    </File>
+    <File Include="Views/PageIndex/NextPage.cshtml">
+      <publishTime>05/30/2014 12:06:52</publishTime>
+    </File>
+    <File Include="Views/PageIndex/Search.cshtml">
+      <publishTime>05/30/2014 18:40:27</publishTime>
+    </File>
+    <File Include="Views/PageIndex/SearchImages.cshtml">
+      <publishTime>05/30/2014 18:40:40</publishTime>
+    </File>
+    <File Include="Views/Shared/Error.cshtml">
+      <publishTime>05/12/2014 09:33:54</publishTime>
+    </File>
+    <File Include="Views/Shared/Index.cshtml">
+      <publishTime>05/12/2014 22:04:21</publishTime>
+    </File>
+    <File Include="Views/Shared/_Layout.cshtml">
+      <publishTime>05/12/2014 09:58:11</publishTime>
+    </File>
+    <File Include="Views/web.config">
+      <publishTime>05/21/2014 16:01:30</publishTime>
+    </File>
+    <File Include="Views/_ViewStart.cshtml">
+      <publishTime>05/12/2014 09:37:44</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>05/30/2014 19:33:51</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

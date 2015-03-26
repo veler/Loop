@@ -1,0 +1,109 @@
+﻿@{
+    Layout = null;
+}
+@model LoopWebsite.Models.PhotoModel
+
+@if (Model == null)
+{
+    <h1>Coucou</h1>
+    return;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"><meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <title>@Model.Query on loop search</title>
+    <link href="../../Content/css/result_img.css" media="all" rel="stylesheet" type="text/css" />
+    <script src="../../Content/js/jquery-1.9.1.js"> </script>
+    <script src="../../Content/js/bootstrap.min.js"> </script>
+    <script src="../../Content/js/dropdown.js"> </script>
+</head>
+<body>
+    <div class="container">
+        <div class="globalSearchContainer">
+            <a href="/"><span id="logo"></span></a>
+            @using (Html.BeginForm("Search", "PageIndex", new { pageIndex = -1 }, FormMethod.Post, new { @class = "input-group" }))
+            {
+                @Html.TextBoxFor(m => m.Query, new { @class = "form-control", @id = "searchInput", @placeholder = "What are you looping for ?", @value = Model.Query })
+                <span class="input-group-btn">
+                    <button class="btn btn-default" type="submit" name="action:Search">
+                        <span class="glyphicon glyphicon-search"></span>
+                    </button>
+                    <button class="btn btn-default" id="images-search" type="submit" name="action:SearchImages">
+                        <span class="glyphicon glyphicon-camera"></span>
+                    </button>
+                </span>
+            }
+        </div>
+    </div>
+    <div class="resultsContainer">
+        <div class="filterButtons">
+            <div class="btn-group">
+                <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                    Color Filter <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu" role="menu">
+                    <li><a href="@Url.Action("SearchImages", "PageIndex", new { color = "All", size = Model.Size, query = Model.Query })">All</a></li>
+                    <li class="divider"></li>
+                    <li><a href="@Url.Action("SearchImages", "PageIndex", new { color = "Green", size = Model.Size, query = Model.Query })">Green</a></li>
+                    <li><a href="@Url.Action("SearchImages", "PageIndex", new { color = "Yellow", size = Model.Size, query = Model.Query })">Yellow</a></li>
+                    <li><a href="@Url.Action("SearchImages", "PageIndex", new { color = "Cyan", size = Model.Size, query = Model.Query })">Cyan</a></li>
+                    <li><a href="@Url.Action("SearchImages", "PageIndex", new { color = "White", size = Model.Size, query = Model.Query })">White</a></li>
+                    <li><a href="@Url.Action("SearchImages", "PageIndex", new { color = "Black", size = Model.Size, query = Model.Query })">Black</a></li>
+                    <li><a href="@Url.Action("SearchImages", "PageIndex", new { color = "Red", size = Model.Size, query = Model.Query })">Red</a></li>
+                    <li><a href="@Url.Action("SearchImages", "PageIndex", new { color = "Magenta", size = Model.Size, query = Model.Query })">Magenta</a></li>
+                    <li><a href="@Url.Action("SearchImages", "PageIndex", new { color = "Blue", size = Model.Size, query = Model.Query })">Blue</a></li>
+                </ul>
+            </div>
+            <div class="btn-group">
+                <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                    Size Filter <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu" role="menu">
+                    <li><a href="@Url.Action("SearchImages", "PageIndex", new { size = "All", color = Model.Color, query = Model.Query })">All</a></li>
+                    <li class="divider"></li>
+                    <li><a href="@Url.Action("SearchImages", "PageIndex", new { size = "Small", color = Model.Color, query = Model.Query })">Small</a></li>
+                    <li><a href="@Url.Action("SearchImages", "PageIndex", new { size = "Medium", color = Model.Color, query = Model.Query })">Medium</a></li>
+                    <li><a href="@Url.Action("SearchImages", "PageIndex", new { size = "Big", color = Model.Color, query = Model.Query })">Big</a></li>
+                </ul>
+            </div>
+        </div>
+        @{
+            int numberOfPhotos = 0;
+            Model.NumberOfPhotosToDisplay = 200;
+            for (int i = Model.ActualPageIndex * Model.NumberOfPhotosToDisplay; (i < (Model.ActualPageIndex + 1) * Model.NumberOfPhotosToDisplay) && i < Model.Photos.Count; i++)
+            {
+                if (numberOfPhotos % 4 == 0)
+                {
+                    @: <ul class="row">
+                }
+
+                <li class="col-md-3">
+                    <a href="@Url.Action("ViewPhoto", "PageIndex", new { url = Model.Photos[i].Url })"><img src="@Model.Photos[i].Url"></a>
+                    <span class="resultMeta">
+                        <table>
+                            <td><a href="@Url.Action("SharePhoto", "PageIndex", new { title = Model.Photos[i].Title, url = Model.Photos[i].Url })"><img id="btnShare" src="../../Content/images/share_active.svg"></a></td>
+                            <td><a href="@Url.Action("LikePhoto", "PageIndex", new { url = Model.Photos[i].Url})"><img id="btnLike" src="../../Content/images/like_active.svg"></a></td>
+                        </table>
+                    </span>
+                </li>
+                numberOfPhotos++;
+                if (numberOfPhotos % 4 == 0)
+                {
+                    @: </ul>
+                }
+
+            }
+        }
+    </div>
+</body>
+<footer>
+    <p>
+        Made with <span id="loveFooter">&hearts;</span> in <i>Paris, France</i> &#9786;<br />
+        <span id="cgu"><a href="@Url.Action("Terms", "PageIndex")">Terms of service</a></span><span id="privacy"><a href="@Url.Action("Privacy", "PageIndex")">Privacy policy</a></span><span id="about"><a href="@Url.Action("About", "PageIndex")">About us</a></span><span id="submit"><a href="@Url.Action("Submit", "PageIndex")">Submit a website</a></span>
+    </p>
+</footer>
+</html>

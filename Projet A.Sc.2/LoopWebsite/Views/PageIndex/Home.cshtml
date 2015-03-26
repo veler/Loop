@@ -1,0 +1,44 @@
+﻿@{
+    Layout = null;
+}
+
+@model LoopWebsite.Models.PageModel
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"><meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <title>loop search — by tweekbros.</title>
+    <script src="../../Content/js/jquery-1.9.1.js"></script>
+    <script src="../../Content/js/jquery-ui.js"></script>
+    <script src="../../Content/js/style.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="searchContainer">
+            <span id="logo"></span>
+            @using (Html.BeginForm("Search", "PageIndex", new { pageIndex = -1 }, FormMethod.Post))
+            {
+                <div class="input-group input-group-lg">
+                    @Html.TextBoxFor(m => m.Query, new { @class = "form-control", @id = "searchInput", @placeholder = "What are you looping for ?" })
+                    <span class="input-group-btn">
+                        <button class="btn btn-default" type="submit" name="action:Search">
+                            <span class="glyphicon glyphicon-search"></span>
+                        </button>
+                        <button class="btn btn-default" id="images-search" type="submit" name="action:SearchImages">
+                            <span class="glyphicon glyphicon-camera"></span>
+                        </button>
+                    </span>
+                </div>
+            }
+        </div>
+    </div>
+</body>
+<footer>
+    <p>                                                                                                                            
+        Made with <span id="loveFooter">&hearts;</span> in <i>Paris, France</i> &#9786;<br />
+        <span id="cgu"><a href="@Url.Action("Terms", "PageIndex")">Terms of service</a></span><span id="privacy"><a href="@Url.Action("Privacy", "PageIndex")">Privacy policy</a></span><span id="about"><a href="@Url.Action("About", "PageIndex")">About us</a></span><span id="submit"><a href="@Url.Action("Submit", "PageIndex")">Submit a website</a></span>
+    </p>
+</footer>
+</html>

@@ -1,0 +1,198 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Header Files\Crawler">
+      <UniqueIdentifier>{89197cc7-2722-4d58-a9a9-87347bd69d09}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Parser">
+      <UniqueIdentifier>{c0c51323-79cc-4d4a-9b4f-251fab9aac0a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Searcher">
+      <UniqueIdentifier>{70e40585-68e1-4cf3-9f1d-ad91a9c37cd7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\SQL">
+      <UniqueIdentifier>{bc8cf9a4-0ca9-4c56-9d52-75243901f8dd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\System">
+      <UniqueIdentifier>{eab0e94d-0f21-4806-b2ae-b58ba9463931}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Crawler">
+      <UniqueIdentifier>{e6102f4a-f626-48d2-8ad2-f9dbd72ece6f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\System">
+      <UniqueIdentifier>{968325d8-e218-4681-92e2-9ee918578a3a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\SQL">
+      <UniqueIdentifier>{8f1aed9d-c428-4a40-8b21-15bb219c96aa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Searcher">
+      <UniqueIdentifier>{6094bab5-0b2c-453e-abd2-0ab359a6a425}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Parser">
+      <UniqueIdentifier>{1a2fd2d8-e9d2-4315-bd34-892369401492}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="CrawlAndSearchApp.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CrawlAndSearchAppDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Balises.h">
+      <Filter>Header Files\SQL</Filter>
+    </ClInclude>
+    <ClInclude Include="PageInternet.h">
+      <Filter>Header Files\SQL</Filter>
+    </ClInclude>
+    <ClInclude Include="Photo.h">
+      <Filter>Header Files\SQL</Filter>
+    </ClInclude>
+    <ClInclude Include="SqlHelper.h">
+      <Filter>Header Files\SQL</Filter>
+    </ClInclude>
+    <ClInclude Include="Json.h">
+      <Filter>Header Files\Searcher</Filter>
+    </ClInclude>
+    <ClInclude Include="SearcherService.h">
+      <Filter>Header Files\Searcher</Filter>
+    </ClInclude>
+    <ClInclude Include="HtmlTagResult.h">
+      <Filter>Header Files\Crawler</Filter>
+    </ClInclude>
+    <ClInclude Include="CrawlerService.h">
+      <Filter>Header Files\Crawler</Filter>
+    </ClInclude>
+    <ClInclude Include="StringExtension.h">
+      <Filter>Header Files\System</Filter>
+    </ClInclude>
+    <ClInclude Include="Task.h">
+      <Filter>Header Files\System</Filter>
+    </ClInclude>
+    <ClInclude Include="ThreadManager.h">
+      <Filter>Header Files\System</Filter>
+    </ClInclude>
+    <ClInclude Include="VectorExtension.h">
+      <Filter>Header Files\System</Filter>
+    </ClInclude>
+    <ClInclude Include="HtmlEntity.h">
+      <Filter>Header Files\Parser</Filter>
+    </ClInclude>
+    <ClInclude Include="HtmlInnerText.h">
+      <Filter>Header Files\Parser</Filter>
+    </ClInclude>
+    <ClInclude Include="HtmlParser.h">
+      <Filter>Header Files\Parser</Filter>
+    </ClInclude>
+    <ClInclude Include="HtmlTag.h">
+      <Filter>Header Files\Parser</Filter>
+    </ClInclude>
+    <ClInclude Include="FileUtility.h">
+      <Filter>Header Files\System</Filter>
+    </ClInclude>
+    <ClInclude Include="ImageUtility.h">
+      <Filter>Header Files\Crawler</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="CrawlAndSearchApp.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CrawlAndSearchAppDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Task.cpp">
+      <Filter>Source Files\System</Filter>
+    </ClCompile>
+    <ClCompile Include="StringExtension.cpp">
+      <Filter>Source Files\System</Filter>
+    </ClCompile>
+    <ClCompile Include="VectorExtension.cpp">
+      <Filter>Source Files\System</Filter>
+    </ClCompile>
+    <ClCompile Include="ThreadManager.cpp">
+      <Filter>Source Files\System</Filter>
+    </ClCompile>
+    <ClCompile Include="Photo.cpp">
+      <Filter>Source Files\SQL</Filter>
+    </ClCompile>
+    <ClCompile Include="PageInternet.cpp">
+      <Filter>Source Files\SQL</Filter>
+    </ClCompile>
+    <ClCompile Include="Balises.cpp">
+      <Filter>Source Files\SQL</Filter>
+    </ClCompile>
+    <ClCompile Include="SqlHelper.cpp">
+      <Filter>Source Files\SQL</Filter>
+    </ClCompile>
+    <ClCompile Include="Json.cpp">
+      <Filter>Source Files\Searcher</Filter>
+    </ClCompile>
+    <ClCompile Include="SearcherService.cpp">
+      <Filter>Source Files\Searcher</Filter>
+    </ClCompile>
+    <ClCompile Include="HtmlEntity.cpp">
+      <Filter>Source Files\Parser</Filter>
+    </ClCompile>
+    <ClCompile Include="HtmlInnerText.cpp">
+      <Filter>Source Files\Parser</Filter>
+    </ClCompile>
+    <ClCompile Include="HtmlParser.cpp">
+      <Filter>Source Files\Parser</Filter>
+    </ClCompile>
+    <ClCompile Include="HtmlTag.cpp">
+      <Filter>Source Files\Parser</Filter>
+    </ClCompile>
+    <ClCompile Include="CrawlerService.cpp">
+      <Filter>Source Files\Crawler</Filter>
+    </ClCompile>
+    <ClCompile Include="HtmlTagResult.cpp">
+      <Filter>Source Files\Crawler</Filter>
+    </ClCompile>
+    <ClCompile Include="FileUtility.cpp">
+      <Filter>Source Files\System</Filter>
+    </ClCompile>
+    <ClCompile Include="ImageUtility.cpp">
+      <Filter>Source Files\Crawler</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="CrawlAndSearchApp.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\CrawlAndSearchApp.rc2">
+      <Filter>Resource Files</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="res\CrawlAndSearchApp.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+  </ItemGroup>
+</Project>

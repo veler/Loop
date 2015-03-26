@@ -1,0 +1,141 @@
+﻿@{
+    Layout = null;
+}
+@model LoopWebsite.Models.PageModel
+
+@if (Model == null)
+{
+    <h1>Coucou</h1>
+    return;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"><meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <title>@Model.Query on loop search</title>
+    <link href="../../Content/css/result.css" media="all" rel="stylesheet" type="text/css" />
+    <script src="../../Content/js/jquery-1.9.1.js"> </script>
+    <script src="../../Content/js/bootstrap.min.js"> </script>
+    <script src="../../Content/js/share.js"> </script>
+    <script src="../../Content/js/dropdown.js"> </script>
+</head>
+<body>
+    <div class="container">
+        <div class="globalSearchContainer">
+            <a href="/"><span id="logo"></span></a>
+
+            @using (Html.BeginForm("Search", "PageIndex", new { pageIndex = -1 }, FormMethod.Post, new { @class = "input-group" }))
+            {
+                @Html.TextBoxFor(m => m.Query, new { @class = "form-control", @id = "searchInput", @placeholder = "What are you looping for ?", @value = Model.Query })
+                <span class="input-group-btn">
+                    <button class="btn btn-default" type="submit" name="action:Search">
+                        <span class="glyphicon glyphicon-search"></span>
+                    </button>
+                    <button class="btn btn-default" id="images-search" type="submit" name="action:SearchImages">
+                        <span class="glyphicon glyphicon-camera"></span>
+                    </button>
+                </span>
+            }
+        </div>
+    </div>
+    <div class="resultsContainer">
+        <div class="filterButton">
+            <div class="btn-group">
+                <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                    Display results <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu" role="menu">
+                    <li><a href="@Url.Action("NextPage", "PageIndex", new { PageIndex=0,numberOfPage = 10 })">10 results</a></li>
+                    <li><a href="@Url.Action("NextPage", "PageIndex", new { PageIndex=0,numberOfPage = 20 })">20 results</a></li>
+                    <li><a href="@Url.Action("NextPage", "PageIndex", new { PageIndex=0,numberOfPage = 30 })">30 results</a></li>
+                    <li><a href="@Url.Action("NextPage", "PageIndex", new { PageIndex=0,numberOfPage = 40 })">40 results</a></li>
+                    <li><a href="@Url.Action("NextPage", "PageIndex", new { PageIndex=0,numberOfPage = 50 })">50 results</a></li>
+                </ul>
+            </div>
+        </div>
+        @for (int i = Model.ActualPageIndex * Model.NumberOfPageToDisplay; (i < (Model.ActualPageIndex + 1) * Model.NumberOfPageToDisplay) && i < Model.Pages.Count; i++)
+        {
+            <div class="theResult">
+                <span id="resultTitle"><a href="@Url.Action("ViewPage", "PageIndex", new { url = Model.Pages[i].Url })">@Model.Pages[i].Title</a></span><br>
+                <span id="resultURL">@Model.Pages[i].Url.Split('/')[2]</span><br>
+                <span id="resultDesc">@Model.Pages[i].Description</span><br>
+                <span id="resultMeta">
+                    <a href="@Url.Action("SharePage", "PageIndex", new { title = Model.Pages[i].Title, url = Model.Pages[i].Url })">
+                        <img id="btnShare" src="../../Content/images/share_active.svg"><span id="txtShare">
+                            Share this page
+                            @if (Model.Pages[i].ShareCount > 0)
+                            {
+                                <strong>(@Model.Pages[i].ShareCount share)</strong>
+                            }
+                        </span>
+                    </a>
+                    <a href="@Url.Action("LikePage", "PageIndex", new { url = Model.Pages[i].Url })">
+                        <img id="btnLike" src="../../Content/images/like_active.svg"><span id="txtFavorite">
+                            I like it!
+                            @if (Model.Pages[i].LikeCount > 0)
+                            {
+                                <strong>(@Model.Pages[i].LikeCount like)</strong>
+                            }
+                        </span>
+                    </a>
+                </span>
+            </div>
+        }
+        <div class="pageSelector">
+            <ul class="pagination">
+                @if (Model.ActualPageIndex > 0)
+                {
+                    <li><a href="@Url.Action("NextPage", "PageIndex", new { pageIndex = Model.ActualPageIndex - 1 })">&laquo; Previous</a></li>
+                }
+                else
+                {
+                    <li class="disabled"><a href="#">&laquo; Previous</a></li>
+                }
+
+                @for (int m = Model.ActualPageIndex - 3; m < (Model.Pages.Count / Model.NumberOfPageToDisplay) && m < Model.ActualPageIndex + 1; m++)
+                {
+                    if (m == Model.ActualPageIndex + 1)
+                    {
+                        <li class="active"><a href="#">@m</a></li>
+                    }
+                    else if (m > 0)
+                    {
+                        <li><a href="@Url.Action("NextPage", "PageIndex", new { pageIndex = m - 1, numberOfPage = Model.NumberOfPageToDisplay })">@m</a></li>
+                    }
+                }
+
+                @for (int j = Model.ActualPageIndex + 1; j < (Model.Pages.Count / Model.NumberOfPageToDisplay) && j < Model.ActualPageIndex + 6; j++)
+                {
+                    if (j == Model.ActualPageIndex + 1)
+                    {
+                        <li class="active"><a href="#">@j</a></li>
+                    }
+                    else
+                    {
+                        <li><a href="@Url.Action("NextPage", "PageIndex", new { pageIndex = j - 1, numberOfPage = Model.NumberOfPageToDisplay })">@j</a></li>
+                    }
+                }
+
+                @if (Model.ActualPageIndex < ((Model.Pages.Count / Model.NumberOfPageToDisplay) - 2))
+                {
+                    <li><a href="@Url.Action("NextPage", "PageIndex", new { pageIndex = Model.ActualPageIndex + 1, numberOfPage = Model.NumberOfPageToDisplay })">Next &raquo;</a></li>
+                }
+                else
+                {
+                    <li class="disabled"><a href="#">Next &raquo;</a></li>
+                }
+            </ul>
+        </div>
+
+    </div>
+</body>
+<footer>
+    <p>
+        Made with <span id="loveFooter">&hearts;</span> in <i>Paris, France</i> &#9786;<br />
+        <span id="cgu"><a href="@Url.Action("Terms", "PageIndex")">Terms of service</a></span><span id="privacy"><a href="@Url.Action("Privacy", "PageIndex")">Privacy policy</a></span><span id="about"><a href="@Url.Action("About", "PageIndex")">About us</a></span><span id="submit"><a href="@Url.Action("Submit", "PageIndex")">Submit a website</a></span>
+    </p>
+</footer>
+</html>

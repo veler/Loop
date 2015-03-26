@@ -1,0 +1,134 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xml:lang="fr" lang="fr">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<title>RECHERCHE on loop search</title>
+	<link href="css/result.css" media="all" rel="stylesheet" type="text/css"/>
+	<script type="text/javascript" src="js/jquery-1.9.1.js"> </script>
+	<script type="text/javascript" src="js/bootstrap.min.js"> </script>
+	<script type="text/javascript" src="js/dropdown.js"> </script>
+</head>
+<body >
+	<div class="container">
+		<div class="globalSearchContainer"
+			<div class="searchContainer">
+				<a href="/"><span id="logo"></span></a>
+				<div class="input-group">
+					<input id="searchInput" type="text" name="moteur" class="form-control" placeholder="What are you looping for ?">
+					<span class="input-group-btn">
+						<button class="btn btn-default" type="button" onclick="window.location.replace('result.html');">
+						<span class="glyphicon glyphicon-search"></span></button>
+						<button class="btn btn-default" id="images-search" type="button" onclick="window.location.replace('result_img.html');">
+						<span class="glyphicon glyphicon-camera"></span></button>
+					</span>
+				</div>
+			</div>
+		</div>
+		<div class="resultsContainer">
+			<div class="filterButton">
+				<div class="btn-group">
+					<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+						Display results <span class="caret"></span>
+					</button>
+					<ul class="dropdown-menu" role="menu">
+						<li><a href="#">10 results</a></li>
+						<li><a href="#">20 results</a></li>
+						<li><a href="#">30 results</a></li>
+						<li><a href="#">40 results</a></li>
+						<li><a href="#">50 results</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="theResult">
+				<span id="resultTitle"><a href="http://loopsearch.kyvandoan.com/">loop search — by tweekbros.</a></span><br>
+				<span id="resultURL">loopsearch.kyvandoan.com</span><br>
+				<span id="resultDesc">Le meilleur moteur de recherche. Le plus joli des moteurs de recherche. Le plus efficace. Fin de l'histoire.</span><br>
+				<span id="resultMeta">
+					<a href="#"><a href="#"><img id="btnShare" src="images/share_active.svg"><span id="txtShare">Share this page</span></a><a href="#"><img id="btnLike" src="images/like_active.svg"><span id="txtFavorite">I like it!</span></a>
+				</span>
+			</div>
+			<div class="theResult">
+				<span id="resultTitle"><a href="http://www.kyvandoan.com/">Ky Van DOAN</a></span><br>
+				<span id="resultURL">www.kyvandoan.com</span><br>
+				<span id="resultDesc">Ky Van DOAN, développeur de sites web et d'applications en auto-entrepreneur, actualités et critiques technologique.</span><br>
+				<span id="resultMeta">
+					<a href="#"><a href="#"><img id="btnShare" src="images/share_active.svg"><span id="txtShare">Share this page</span></a><a href="#"><img id="btnLike" src="images/like_active.svg"><span id="txtFavorite">I like it!</span></a>
+				</span>
+			</div>
+			<div class="theResult">
+				<span id="resultTitle"><a href="http://www.velersoftware.com/">Etienne BAUDOUX (Veler Software)</a></span><br>
+				<span id="resultURL">www.velersoftware.com</span><br>
+				<span id="resultDesc">Etienne BAUDOUX (Veler Software) : ses projets, son CV, son blog...</span><br>
+				<span id="resultMeta">
+					<a href="#"><a href="#"><img id="btnShare" src="images/share_active.svg"><span id="txtShare">Share this page</span></a><a href="#"><img id="btnLike" src="images/like_active.svg"><span id="txtFavorite">I like it!</span></a>
+				</span>
+			</div>
+			<div class="theResult">
+				<span id="resultTitle"><a href="http://www.supinfo.com/">Ecole informatique - SUPINFO International University</a></span><br>
+				<span id="resultURL">www.supinfo.com</span><br>
+				<span id="resultDesc">Ecole informatique mondiale SUPINFO, leader en France qui forme des ing&eacute;nieurs en informatique bac+5 et d&eacute;livre un International Master of Science certifi&eacute; par l'Etat au niveau I</span><br>
+				<span id="resultMeta">
+					<a href="#"><a href="#"><img id="btnShare" src="images/share_active.svg"><span id="txtShare">Share this page</span></a><a href="#"><img id="btnLike" src="images/like_active.svg"><span id="txtFavorite">I like it!</span></a>
+				</span>
+			</div>
+			<div class="theResult">
+				<span id="resultTitle"><a href="http://www.apple.com/fr/">Apple</a></span><br>
+				<span id="resultURL">www.apple.com/fr/</span><br>
+				<span id="resultDesc">Apple a créé l'iPod et iTunes, les Mac portables et de bureau, le système d' exploitation OS X et les révolutionnaires iPhone et iPad.</span><br>
+				<span id="resultMeta">
+					<a href="#"><a href="#"><img id="btnShare" src="images/share_active.svg"><span id="txtShare">Share this page</span></a><a href="#"><img id="btnLike" src="images/like_active.svg"><span id="txtFavorite">I like it!</span></a>
+				</span>
+			</div>
+			<div class="theResult">
+				<span id="resultTitle"><a href="http://www.ubuntu.com/">Ubuntu: The leading OS for PC, tablet, phone and cloud</a></span><br>
+				<span id="resultURL">www.ubuntu.com</span><br>
+				<span id="resultDesc">Ubuntu is an open source software platform that runs everywhere from the smartphone, the tablet and the PC to the server and the cloud.</span><br>
+				<span id="resultMeta">
+					<a href="#"><a href="#"><img id="btnShare" src="images/share_active.svg"><span id="txtShare">Share this page</span></a><a href="#"><img id="btnLike" src="images/like_active.svg"><span id="txtFavorite">I like it!</span></a>
+				</span>
+			</div>
+			<div class="theResult">
+				<span id="resultTitle"><a href="http://www.cloudvuetech.net/">Cloudvue Technologies Corporation</a></span><br>
+				<span id="resultURL">www.cloudvuetech.net</span><br>
+				<span id="resultDesc">Cloudvue Technologies provides user-end hardware enhancement solutions for cloud and server-based computing. As private and public sectors look for solutions to</span><br>
+				<span id="resultMeta">
+					<a href="#"><a href="#"><img id="btnShare" src="images/share_active.svg"><span id="txtShare">Share this page</span></a><a href="#"><img id="btnLike" src="images/like_active.svg"><span id="txtFavorite">I like it!</span></a>
+				</span>		
+			</div>
+			<div class="theResult">
+				<span id="resultTitle"><a href="http://www.transilien.com/">SNCF Transilien : transport RER, Metro, Train à Paris et Ile de France</a></span><br>
+				<span id="resultURL">www.transilien.com</span><br>
+				<span id="resultDesc">Consultez sur Transilien.com les horaires, informations et état du trafic des trains, RER, Métro, Tram, Bus, Noctilien et Métro à Paris et en Ile-de-France</span><br>
+				<span id="resultMeta">
+					<a href="#"><a href="#"><img id="btnShare" src="images/share_active.svg"><span id="txtShare">Share this page</span></a><a href="#"><img id="btnLike" src="images/like_active.svg"><span id="txtFavorite">I like it!</span></a>
+				</span>
+			</div>
+			<div class="theResult">
+				<span id="resultTitle"><a href="http://www.visiter-saintgratien.com/">Visiter la ville de Saint-Gratien 95 | Lac d&#039;Enghien, Parcs et Patrimoine | Balade et visite en région parisienne Paris-Île de France</a></span><br>
+				<span id="resultURL">www.visiter-saintgratien.com</span><br>
+				<span id="resultDesc">Saint Gratien est une petite commune du Val d&#039;Oise (95), calme et verdoyante, se balader, visiter, à proximité de Paris et au bord du Lac d&#039;Enghien. L</span><br>
+				<span id="resultMeta">
+					<a href="#"><a href="#"><img id="btnShare" src="images/share_active.svg"><span id="txtShare">Share this page</span></a><a href="#"><img id="btnLike" src="images/like_active.svg"><span id="txtFavorite">I like it!</span></a>
+				</span>
+			</div>
+			<div class="pageSelector">
+				<ul class="pagination">
+					<li class="disabled"><a href="#">&laquo; Previous</a></li>
+					<li class="active"><a href="#">1</a></li>
+					<li><a href="#">2</a></li>
+					<li><a href="#">3</a></li>
+					<li><a href="#">4</a></li>
+					<li><a href="#">5</a></li>
+					<li><a href="#">Next &raquo;</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</body>
+<footer>
+	<p>Made with <span id="loveFooter">&hearts;</span> in <i>Paris, France</i> &#9786;<br />
+		<span id="cgu"><a href="tos.html">Terms of service</a></span><span id="privacy"><a href="privacy.html">Privacy policy</a></span><span id="about"><a href="about.html">About us</a></span><span id="submit"><a href="submit.html">Submit a website</a></span>
+	</p>
+</footer>
+</html>

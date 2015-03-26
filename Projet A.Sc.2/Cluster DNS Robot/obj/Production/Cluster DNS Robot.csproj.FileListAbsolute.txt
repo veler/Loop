@@ -1,0 +1,6 @@
+D:\SUPINFO\A.Sc.2\Projets\Fin d'année\PROJET\Projet A.Sc.2\Cluster DNS Robot\bin\Production\Cluster DNS Robot.exe.config
+D:\SUPINFO\A.Sc.2\Projets\Fin d'année\PROJET\Projet A.Sc.2\Cluster DNS Robot\bin\Production\Cluster DNS Robot.exe
+D:\SUPINFO\A.Sc.2\Projets\Fin d'année\PROJET\Projet A.Sc.2\Cluster DNS Robot\bin\Production\Cluster DNS Robot.pdb
+D:\SUPINFO\A.Sc.2\Projets\Fin d'année\PROJET\Projet A.Sc.2\Cluster DNS Robot\obj\Production\Cluster DNS Robot.csprojResolveAssemblyReference.cache
+D:\SUPINFO\A.Sc.2\Projets\Fin d'année\PROJET\Projet A.Sc.2\Cluster DNS Robot\obj\Production\Cluster DNS Robot.exe
+D:\SUPINFO\A.Sc.2\Projets\Fin d'année\PROJET\Projet A.Sc.2\Cluster DNS Robot\obj\Production\Cluster DNS Robot.pdb

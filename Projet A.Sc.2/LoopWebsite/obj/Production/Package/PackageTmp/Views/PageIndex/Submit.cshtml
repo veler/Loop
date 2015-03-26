@@ -1,0 +1,44 @@
+﻿@{
+    Layout = null;
+}
+
+@model LoopWebsite.Models.PageModel
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"><meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <title>Submit a website to loop search</title>
+    <link href="../../Content/css/submit.css" media="all" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <div class="header">
+        <p id="logoTitle"><a href="/"><img src="../../Content/images/logo.svg" alt="loop search" height="110px" /></a></p>
+        <h1 id="headerTitle">Submit your Website</h1>
+    </div>
+    <div class="content">
+        <h1>Submit Website for Crawling and Indexing</h1>
+        <p id="subTitleContent">You can add a missing Website or your own website for Crawling and Indexing. Simply add the URL below! <i>(And we'll take care of it)</i></p>
+        <div class="submitContainer">
+            @using (Html.BeginForm("Submit", "PageIndex", FormMethod.Post))
+            {
+                <div class="input-group input-group-lg">
+                    @Html.TextBoxFor(m => m.Query, new { @name = "moteur", @class = "form-control", @id = "searchInput", @placeholder = "What do you want us to loop for ?", @onkeydown = "if(event.keyCode==13)window.alert(' link submitted');" })
+                    <span class="input-group-btn">
+                        <button class="btn btn-default" type="submit" onclick="window.alert(' link submitted');">
+                            <span class="glyphicon glyphicon-ok"></span>
+                        </button>
+                    </span>
+                </div>
+            }
+        </div>
+    </div>
+</body>
+<footer>
+    <p>
+        Made with <span id="loveFooter">&hearts;</span> in <i>Paris, France</i> &#9786;<br />
+        <span id="cgu"><a href="@Url.Action("Terms", "PageIndex")">Terms of service</a></span><span id="privacy"><a href="@Url.Action("Privacy", "PageIndex")">Privacy policy</a></span><span id="about"><a href="@Url.Action("About", "PageIndex")">About us</a></span><span id="submit"><a href="@Url.Action("Submit", "PageIndex")">Submit a website</a></span>
+    </p>
+</footer>
+</html>
